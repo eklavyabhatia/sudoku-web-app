@@ -1,0 +1,55 @@
+#container{
+    height: auto;
+    width: 540px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly ;
+    
+}
+
+#container div{
+    background-color: whitesmoke;
+    height: 60px;
+    width: 60px;
+    /* margin: 5px; */
+     /* border: black 1px solid; */
+    box-sizing: border-box; 
+}
+#container div:hover{
+    background-color: cornflowerblue;
+}
+
+.lsb{
+    border-left: black 2px solid;
+}
+
+.bsb{
+    border-bottom: black 2px solid;
+}
+
+.rsb{
+    border-right: black 2px solid;
+}
+
+.tsb{
+    border-top: black 2px solid;
+}
+
+
+.ldb{
+    border-left: black 0.6px dashed;
+}
+
+.bdb{
+    border-bottom: black 0.6px dashed;
+}
+
+.rdb{
+    border-right: black 0.6px dashed;
+}
+
+.tdb{
+    border-top: black 0.6px dashed;
+}
