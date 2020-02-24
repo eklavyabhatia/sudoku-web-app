@@ -18,8 +18,9 @@
     vertical-align: middle;
     line-height: 60px; 
     font-size: 30px; 
-    /* font-weight: 500; */
+    
 }
+
 #container div:hover{
     background-color: cornflowerblue;
 }
