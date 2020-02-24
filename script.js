@@ -35,6 +35,7 @@ button.onclick = function () {
     xhrRequest.send()
 }
 
+//to be completed by student
 function isPossible(board, sr, sc, val) {
     for (var row = 0; row < 9; row++) {
         if (board[row][sc] == val) {
@@ -53,7 +54,7 @@ function isPossible(board, sr, sc, val) {
 
     for (var cr = r; cr < r + 3; cr++) {
         for (var cc = c; cc < c + 3; cc++) {
-            if(board[cr][cc]==val){
+            if (board[cr][cc] == val) {
                 return false;
             }
         }
@@ -62,6 +63,7 @@ function isPossible(board, sr, sc, val) {
 
 }
 
+//to be completed by student
 function solveSudokuHelper(board, sr, sc) {
     if (sr == 9) {
         changeBoard(board);
@@ -92,5 +94,5 @@ function solveSudoku(board) {
 
 solve.onclick = function () {
     solveSudoku(board)
-   
+
 }
