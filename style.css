@@ -6,7 +6,18 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-evenly ; 
-    
+    margin: 0 auto;
+}
+
+#generate-sudoku{
+    margin:auto;
+    display:block;;
+}
+
+
+#solve{
+    margin:auto;
+    display:block;;
 }
 
 #container div{
@@ -20,10 +31,11 @@
     line-height: 60px; 
     font-size: 30px; 
     color: green;
+    
 }
 
 #container div:hover{
-    background-color: cornflowerblue;
+    background-color: lightskyblue;
 }
 
 .lsb{

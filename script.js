@@ -37,7 +37,7 @@ function setColor(temp) {
     for (var i = 0; i < 9; i++) {
         for (var j = 0; j < 9; j++) {
             if (temp[i][j] == true) {
-                arr[i][j].style.color = "red";
+                arr[i][j].style.color = "#DC3545";
             }
 
         }
@@ -85,13 +85,14 @@ button.onclick = function () {
         console.log(response)
         initializeTemp(temp)
         resetColor()
-        
+
         board = response.board
         setTemp(board, temp)
         setColor(temp)
         changeBoard(board)
     }
-    xhrRequest.open('get', 'https://sugoku.herokuapp.com/board?difficulty=random')
+    xhrRequest.open('get', 'https://sugoku.herokuapp.com/board?difficulty=easy')
+    //we can change the difficulty of the puzzle the allowed values of difficulty are easy, medium, hard and random
     xhrRequest.send()
 }
 
